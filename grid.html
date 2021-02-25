@@ -1,0 +1,46 @@
+<html>
+<h1 style="text-align:center ;text-transform:uppercase">css grid</h1>
+<div class="wrapper">
+
+<div class="header">header</div>
+<div class="menu">menu</div>
+<div class="content">content</div>
+<div class="footer">footer</div>
+
+</div>
+</html>
+<style>
+.wrapper{
+height:100%;
+background-color:pink;
+grid-template-columns:repeat(3,1fr);
+grid-template-rows:50px 50px 80px;
+display:grid;
+grid-gap:3px;
+grid-template-areas:
+"m h h"
+"m c c"
+"m d d"
+
+}
+.header{
+background-color:blue;
+grid-area:h;
+}
+.menu{
+background-color:black;
+grid-area:m;
+
+}
+
+.content{
+background-color:green;
+grid-area:c;
+}
+.footer{
+background-color:red;
+grid-area:d;
+}
+
+
+</style>
